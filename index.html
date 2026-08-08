@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>TrekStak — Just Tap, Stak, and Go!</title>
+  <meta name="description" content="TrekStak: discover 115 cities across 50 countries. Self-guided tours, travel tools, bars, restaurants, Viator experiences, and family activities." />
+  <meta property="og:title" content="TrekStak — Just Tap, Stak, and Go!" />
+  <meta property="og:description" content="Discover 115 cities across 50 countries. Self-guided tours, travel tools, and more." />
+  <meta name="theme-color" content="#0b1424" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600;700;800&family=Outfit:wght@400;500;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <div class="page">
+    <div class="bg" aria-hidden="true">
+      <div class="bg-base"></div>
+      <div class="bg-shade"></div>
+      <div class="bg-glow"></div>
+      <div class="bg-glow-secondary"></div>
+    </div>
+
+    <header class="top">
+      <a class="brand" href="#top" id="top">
+        <img class="brand-logo" src="finallogo%20.png" width="40" height="40" alt="" />
+        <span>TrekStak</span>
+      </a>
+    </header>
+
+    <main class="hero">
+      <p class="eyebrow">Discover 115 cities across 50 countries</p>
+      <h1>Just Tap, Stak, and Go!</h1>
+
+      <div id="code-block" class="code-block is-empty" hidden>
+        <p id="code-heading" class="code-label">Your promo code</p>
+        <div class="code-row">
+          <p class="code-value" id="code-value" aria-live="polite"></p>
+          <button type="button" class="btn-copy" id="copy-code">Copy</button>
+        </div>
+      </div>
+
+      <p id="offer-line" class="offer-line">
+        Self-guided tours, travel tools, bars, restaurants, Viator experiences, and family activities.
+      </p>
+
+      <a
+        class="btn-store"
+        id="app-store-link"
+        href="https://apps.apple.com/app/trekstak/id6758947030"
+        rel="noopener noreferrer"
+      >
+        <img
+          class="app-store-badge"
+          src="apple-badge-black.png"
+          width="158"
+          height="54"
+          alt="Download on the App Store"
+        />
+      </a>
+    </main>
+
+    <footer class="foot">
+      <a href="https://partners.trekstakapp.com">Creators</a>
+      <a href="https://support.trekstakapp.com">Support</a>
+      <a href="https://www.termsfeed.com/live/0ff73403-1e24-411c-8910-b9e186013780">Privacy</a>
+    </footer>
+  </div>
+
+  <div class="toast" id="toast" role="status" aria-live="polite" hidden>Code copied</div>
+  <script src="script.js"></script>
+</body>
+</html>
