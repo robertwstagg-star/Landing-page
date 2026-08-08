@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Get TrekStak</title>
+  <script>
+    (function () {
+      var path = location.pathname.replace(/^\/+|\/+$/g, "");
+      if (!path || path.indexOf("/") !== -1) {
+        location.replace("/");
+        return;
+      }
+      location.replace("/?code=" + encodeURIComponent(path));
+    })();
+  </script>
+  <meta http-equiv="refresh" content="0;url=/" />
+</head>
+<body>
+  <p><a href="/">Continue to TrekStak</a></p>
+</body>
+</html>
